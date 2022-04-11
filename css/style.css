@@ -33,7 +33,7 @@ html::-webkit-scrollbar-thumb {
 .header {
   position: absolute;
   text-align: center;
-  padding: 1.5rem 16%;
+  padding: 1.5rem 18%;
 }
 
 .header .active {
@@ -47,8 +47,9 @@ html::-webkit-scrollbar-thumb {
 }
 
 .header a {
+  font-family: 'UVNThanhPho_R';
   font-size: 1.5rem;
-  color: #9f95a2;
+  color: #fff;
   padding: 0 2rem;
   border-right: 0.1rem solid #9f95a2;
 }
@@ -81,9 +82,9 @@ html::-webkit-scrollbar-thumb {
 }
 
 .home .lamp {
-  top: 42rem;
+  top: 41.6rem;
   position: absolute;
-  left: 18rem;
+  left: 17.3rem;
 }
 
 .home .register-card {
@@ -377,22 +378,39 @@ html::-webkit-scrollbar-thumb {
 
 .home .gift .news .header-news {
   background: url(../images/news-header-bg.png) top center/cover no-repeat;
-  padding: 2rem 0;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.home .gift .news .header-news a {
+.home .gift .news .header-news .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.home .gift .news .header-news .header-nav a {
   font-size: 1.5rem;
   color: #b69b74;
-  padding: 0 2rem;
   font-weight: 600;
 }
 
-.home .gift .news .header-news a:hover {
+.home .gift .news .header-news .header-nav a:hover {
   color: #fff;
 }
 
-.home .gift .news .header-news :first-child {
+.home .gift .news .header-news .header-nav :first-child {
   color: #f2f2f2;
+}
+
+.home .gift .news .header-news i {
+  font-size: 1.7rem;
+  color: #b69b74;
 }
 
 .home .gift .news .container {
@@ -421,12 +439,16 @@ html::-webkit-scrollbar-thumb {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
+  cursor: pointer;
+}
+
+.home .gift .news .container .box .img:hover {
+  border: 0.5rem solid #d2a96d;
 }
 
 .home .gift .news .container .box .img:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  cursor: pointer;
 }
 
 .home .gift .news .container .box .content {
@@ -446,7 +468,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .home .gift .news .container .box .content h3:hover {
-  text-decoration: underline;
+  color: #d2a96d;
 }
 
 .home .gift .news .container .box .content span {
@@ -472,11 +494,12 @@ html::-webkit-scrollbar-thumb {
 }
 
 .home .gift .news .container .btn a {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-family: 'UVNThanhPho_R';
   color: #606370;
   text-transform: uppercase;
   background-color: #1f3252;
-  border: 0.5rem solid #bfbfbf;
+  border: 0.3rem solid #bfbfbf;
   padding: 1rem;
 }
 

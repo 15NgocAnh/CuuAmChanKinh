@@ -11,6 +11,7 @@
 
 $red: #b80f0b;
 $bage: #b69b74;
+$hoverBage: #d2a96d;
 $boder-btn: #bfbfbf;
 $color-btn: #606370;
 $gray: #9f95a2;
@@ -46,7 +47,7 @@ html{
 .header{
     position: absolute;
     text-align: center;
-    padding: 1.5rem 16%;
+    padding: 1.5rem 18%;
 
     .active {
         background-color: var(--blue-bg);
@@ -56,8 +57,9 @@ html{
     }
 
     a{
+        font-family: 'UVNThanhPho_R';
         font-size: 1.5rem;
-        color: $gray;
+        color: #fff;
         padding: 0 2rem;
         border-right: .1rem solid $gray;
     }
@@ -93,9 +95,9 @@ html{
     height: 113rem;
 
     .lamp{
-        top: 42rem;
+        top: 41.6rem;
         position: absolute;
-        left: 18rem
+        left: 17.3rem;
     }
 
     .register-card{
@@ -317,21 +319,32 @@ html{
 
             .header-news{
                 background: url(../images/news-header-bg.png) top center / cover no-repeat;
-                padding: 2rem 0;
+                padding: 2rem;
+                display: flex;
+                justify-content: space-between;
 
-                a{
-                    font-size: 1.5rem;
+                .header-nav{
+                    display: flex;
+                    gap: 2.5rem;
+
+                    a{
+                        font-size: 1.5rem;
+                        color: $bage;
+                        font-weight: 600;
+                    }
+    
+                    a:hover{
+                        color: #fff;
+                    }
+    
+                    :first-child{
+                        color: #f2f2f2;
+                    }
+                }
+
+                i{
+                    font-size: 1.7rem;
                     color: $bage;
-                    padding: 0 2rem;
-                    font-weight: 600;
-                }
-
-                a:hover{
-                    color: #fff;
-                }
-
-                :first-child{
-                    color: #f2f2f2;
                 }
             }
 
@@ -353,13 +366,17 @@ html{
                             width: 100%;
                             object-fit: cover;
                             height: 100%;
+                            cursor: pointer;
                         }
                         
+                    }
+
+                    .img:hover{
+                        border: .5rem solid $hoverBage;
                     }
                     
                     .img:hover img{
                         transform: scale(1.1);
-                        cursor: pointer;
                     }
 
                     .content{
@@ -376,7 +393,7 @@ html{
                         }
 
                         h3:hover{
-                            text-decoration: underline;
+                            color: $hoverBage;
                         }
 
                         span{
@@ -399,11 +416,12 @@ html{
                     gap: 1rem;
                     
                     a {
-                        font-size: 1.5rem;
+                        font-size: 1.4rem;
+                        font-family: 'UVNThanhPho_R';
                         color: $color-btn;
                         text-transform: uppercase;
                         background-color: $blue;
-                        border: .5rem solid $boder-btn;
+                        border: .3rem solid $boder-btn;
                         padding: 1rem;
                     }
                 }
