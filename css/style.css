@@ -385,6 +385,9 @@ html::-webkit-scrollbar-thumb {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home .gift .news .header-news .header-nav {
@@ -400,17 +403,17 @@ html::-webkit-scrollbar-thumb {
   font-weight: 600;
 }
 
-.home .gift .news .header-news .header-nav a:hover {
-  color: #fff;
-}
-
 .home .gift .news .header-news .header-nav :first-child {
   color: #f2f2f2;
 }
 
-.home .gift .news .header-news i {
-  font-size: 1.7rem;
+.home .gift .news .header-news .add {
+  font-size: 3rem;
   color: #b69b74;
+}
+
+.home .gift .news .header-news a:hover {
+  color: #fff;
 }
 
 .home .gift .news .container {
